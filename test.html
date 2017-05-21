@@ -1,13 +1,15 @@
 
 <script src="./element.js"></script>
+<script src="./util.js"></script>
+<script src="./patch.js"></script>
+<script src="./diff.js"></script>
+<body></body>
 <script>
-//var el = Element();
-var tree = Element('div', {'id': 'container'}, [
-    Element('h1', {style: 'color: blue'}, ['simple virtal dom']),
-    Element('p', ['Hello, virtual-dom']),
-    Element('ul', [Element('li')])
-])
-
+var tree = new Element('div', {id: 'container'}, [
+    new Element('h1', {style: 'color: blue'}, ['simple virtal dom']),
+    new Element('p', ['Hello, virtual-dom']),
+    new Element('ul', [new Element('li')])
+]);
+    document.body.appendChild(tree.render());
+//    console.log(document);
 </script>
-
-
