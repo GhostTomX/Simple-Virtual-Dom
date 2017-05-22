@@ -36,3 +36,17 @@ function setAttr(node,key,value){
             break;
            }
 }
+
+function toArray (listLike) {
+  if (!listLike) {
+    return []
+  }
+
+  var list = []
+
+  for (var i = 0, len = listLike.length; i < len; i++) {
+    list.push(listLike[i])
+  }
+
+  return list
+}
