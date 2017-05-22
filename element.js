@@ -25,7 +25,6 @@ function Element(tagName,props,children){
 
 Element.prototype.render = function(){
     var el = document.createElement(this.tagName);
-    console.log(el);
     var props = this.props;
     for (var propName in props){
         var propValue = props[propName]

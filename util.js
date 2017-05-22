@@ -6,6 +6,10 @@ function isArray(list){
     return this.type(list) ==='[object Array]'
 }
 
+function isString(list){
+    return this.type(list) ==='[object String]'
+}
+
 function each(arr,fn){
     for(var i =0;i<arr.length;i++){
         fn(arr[i],i);
